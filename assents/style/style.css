@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(218, 216, 216);
+}
+
+.center{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center .logo{
+    width: 230px;
+    display: flex;
+    align-items: center;
+}
+
+header .center .logo a{
+    color: #0000FD;
+    font-size: 27px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header .center .logo img{
+    width: 58px;
+    cursor: pointer;
+}
+
+header nav{
+    width: 600px;
+}
+
+li.selected{
+    color: rgb(255, 0, 0);
+}
+
+li.selected:hover{
+    color: #0000FD;
+    transition: 0.5s;
+}
+
+header nav ul{
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+header nav ul li{
+    margin-right: 50px;
+    font-size: 17px;
+    display: inline-block;
+    cursor: pointer;
+    color: #0000FD;
+    text-transform: uppercase;
+}
+
+header nav ul li:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+
+.login input{
+    font-size: 16px;
+    width: 100px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login input:hover{
+    background-color: white;
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+/*CSS DAS TAGS DENTRO DO HEADER*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #bbb;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 91%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    position: relative;
+    display: none;
+  }
+
+  .info{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+
+  .info p{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 350px
+  }
+
+  .info h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .info h4{
+    margin-bottom: 20px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .dot.active, .dot:hover {
+    background-color: #717171;
+  }
